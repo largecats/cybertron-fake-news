@@ -6,9 +6,9 @@
 
     text-align: center;
     // margin-top: 50px;
-    background-color: #000000;
+    background-color: rgb(5, 5, 5);
     // box-shadow: 0 -2px 4px 1px rgba(0,0,0,0.5);
-    color: #bbb;
+    color: rgb(255,255,255);
     .wrapper {
         width: 1140px;
         margin: 0 auto;
@@ -35,6 +35,13 @@
         }
         .description {
             display: inline-block;
+            a {
+                color: rgb(225, 225, 225);
+                transition: 0.3s ease;
+                &:hover {
+                    color: #fff;
+                }
+            }
         }
         .power {
             a {
