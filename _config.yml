@@ -13,6 +13,7 @@ url: "https://largecats.github.io/cybertron-fake-news" # the base hostname & pro
 
 permalink: /:year/:month/:day/:title/
 timezone: Asia/Shenzhen
+future: true
 
 # Build settings
 markdown: kramdown
