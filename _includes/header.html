@@ -1,43 +1,8 @@
 <header id="top">
     <div class="wrapper">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <a href="{{ site.baseurl }}/" class="brand">{{ site.title }}</a>
-        <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">Galaxy</a>
-        <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">Cybertron</a>
-        <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">Economics</a>
-        <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">Politics</a>
-        <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">Technology</a>
-        <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">Entertainment</a>
-        <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">Fashion</a>
-        <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">Earth</a>
-        <!-- <small>{{site.brief-intro}}</small> -->
-        <!-- <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
-        <nav id="headerNav">
-            <ul>
-                <li>
-                    {% if page.url == '/' %}
-                    <a class="active" href="{{site.baseurl}}/">
-                        {% else %}
-                    <a href="{{site.baseurl}}/">
-                    {% endif %}
-                        <i class="fa fa-home"></i>Home
-                    </a>
-                </li>
-
-                {% for my_page in site.pages %}
-                    {% if my_page.type == 'page' %}
-                    <li>
-                        {% if my_page.url == page.url %}
-                        <a class="active" href="{{ my_page.url | prepend: site.baseurl }}">
-                            {% else %}
-                        <a href="{{ my_page.url | prepend: site.baseurl }}">
-                        {% endif %}
-                            <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
-                        </a>
-                    </li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-        </nav> -->
+        {% for my_page in site.pages %}
+            <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">{{ my_page.title }}</a>
+        {% endfor %}
     </div>
 </header>
