@@ -7,6 +7,18 @@
         }
     }
     .left {
+        .sectionTitle {
+            font-size: 20px;
+            font-weight: bold;
+            height: 35px;
+            color: rgb(5,5,5);
+            background-color: rgb(200,200,200);
+            border-bottom: 1px solid #c0c0c0;
+        }
+        h4 {
+            margin-top: 0;
+            margin-bottom: -10px;
+        }
         >ul {
             padding: 0;
             >li {
@@ -78,6 +90,17 @@
         }
     }
     .right {
+        .sectionTitle {
+            font-size: 20px;
+            font-weight: bold;
+            height: 35px;
+            color: rgb(5,5,5);
+            background-color: rgb(200,200,200);
+        }
+        .headline {
+            font-size: 14px;
+            border-top: 1px solid #c0c0c0;
+        }
         .wrap {
             .side {
                 margin-bottom: 20px;

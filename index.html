@@ -9,7 +9,7 @@ layout: default
         </div>
         <ul>
           {% for post in site.posts %}
-            {% if post.tag == "Featured" %}
+            {% if post.tags contains "featured" %}
               <li>
                 <h4>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
