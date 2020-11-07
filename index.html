@@ -64,11 +64,11 @@ layout: default
         <div class="title">
           &nbsp;&nbsp;Latest
         </div>
-        <ul>
-          {% for post in site.posts offset: 0 limit: 10  %}
-            <p><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
-          {% endfor %}
-        </ul>
+        {% for post in site.posts offset: 0 limit: 10  %}
+          <div class="headline">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </div>
+        {% endfor %}
     </div>
 </div>
 <!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->

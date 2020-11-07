@@ -106,29 +106,13 @@
             font-weight: bold;
             height: 50px;
             background-color: rgb(225, 225, 225);
-            border-bottom: 1px solid #c0c0c0;
         }
         .fixed {
             position: fixed;
             top: 20px;
         }
-        ul {
-            >h2 {
-                margin-left: -40px;
-                color: #6a6b6b;
-            }
-            li {
-                line-height: 1.8;
-                color: #888888;
-                .title {
-                    font-weight: bold;
-                    color: #223253;
-                    transition: 0.3s ease;
-                    &:hover {
-                        color: #4d6dad;
-                    }
-                }
-            }
+        .headline {
+            border-top: 1px solid #c0c0c0;
         }
     }
 }
