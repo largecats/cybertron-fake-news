@@ -9,7 +9,7 @@
 title: CFN
 brief-intro: Fake news on Cybertron.
 baseurl: "/cybertron-fake-news" # the subpath of your site, e.g. /blog
-url: "https://largecats.github.io" # the base hostname & protocol for your site
+url: "https://largecats.github.io/" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 future: true
