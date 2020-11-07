@@ -2,7 +2,6 @@ header {
     background: rgb(5, 5, 5);
     height: 52px;
     color: #9d9d9d;
-    // box-shadow: 0 2px 4px 1px rgba(0,0,0,0.5);
     margin-bottom: 20px;
     a {
         color: rgb(225, 225, 225);
@@ -20,22 +19,23 @@ header {
             margin-right: 10px;
             font-size: 16px;
         }
-        // small {
-        //     margin-left: 26px;
-        //     font-size: 16px;
-        // }
+        small {
+            margin-left: 26px;
+            font-size: 16px;
+        }
         .menu{
             display: none;
         }
         nav {
             float: right;
+            margin-right: 700px;
             ul {
                 font-size: 0;
                 margin: 0;
                 padding: 0;
                 li {
                     list-style: none;
-                    font-size: 14px;
+                    font-size: 16px;
                     display: inline-block;
                     -webkit-transition: 0.2s ease;
                     transition: 0.2s ease;
@@ -94,12 +94,12 @@ header {
 }
 @media screen and (max-width: 770px) {
     header {
-        height: 48px;
+        height: 52px;
         margin-bottom: 15px;
         .wrapper {
             width: 95%;
             margin: 0 auto;
-            line-height: 48px;
+            line-height:50px;
             position: relative;
             z-index: 101;
             .brand {
