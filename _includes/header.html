@@ -1,7 +1,7 @@
 <header id="top">
     <div class="wrapper">
-        <a href="{{ site.baseurl }}/">
-        <img src="/favicon.png">
+        <a href="{{ site.baseurl }}/" class="brand">
+        <img src="{{ site.baseurl }}/favicon.png" width="50" height="50" img style="vertical-align:middle">
         </a>
         {% for my_page in site.pages %}
             <a href="{{ my_page.url | prepend: site.baseurl }}/" class="brand">{{ my_page.title }}</a>
