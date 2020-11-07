@@ -4,16 +4,16 @@ layout: default
 
 <div class="page clearfix" index>
     <div class="left">
-        <div class="title">
+        <div class="sectionTitle">
           &nbsp;&nbsp;Featured
         </div>
         <ul>
           {% for post in site.posts %}
             {% if post.tag == "Featured" %}
               <li>
-                <h2>
+                <h4>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h2>
+                </h4>
                 <div class="label">
                     <div class="label-card">
                         <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
@@ -37,8 +37,6 @@ layout: default
           {% endfor %}
         </ul>
 
-
-
         <!-- Pagination links -->
         <div class="pagination">
           {% if paginator.previous_page %}
@@ -60,8 +58,9 @@ layout: default
     </div>
 
     <button class="anchor"><i class="fa fa-anchor"></i></button>
+
     <div class="right">
-        <div class="title">
+        <div class="sectionTitle">
           &nbsp;&nbsp;Latest
         </div>
         {% for post in site.posts offset: 0 limit: 10  %}
@@ -70,6 +69,7 @@ layout: default
           </div>
         {% endfor %}
     </div>
+
 </div>
 <!-- <script src="{{ "/js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
-<!-- <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>

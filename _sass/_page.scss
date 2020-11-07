@@ -20,14 +20,15 @@
         font-size: 16px;
         background-color: rgb(250,250,250);
         // box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
-        .title {
-            font-size: 30px;
+        .sectionTitle {
+            font-size: 20px;
             font-weight: bold;
-            height: 50px;
+            height: 35px;
             background-color: rgb(225, 225, 225);
             border-bottom: 1px solid #c0c0c0;
         }
-        >h1 {
+        h4 {
+            margin-top: 0;
             margin-bottom: -10px;
         }
         a:not([title]){
@@ -101,18 +102,60 @@
         width: 25%;
         padding: 20px 30px;
         line-height: 1.6;
-        .title {
-            font-size: 30px;
+        .sectionTitle {
+            font-size: 20px;
             font-weight: bold;
-            height: 50px;
+            height: 35px;
             background-color: rgb(225, 225, 225);
+        }
+        .headline {
+            border-top: 1px solid #c0c0c0;
         }
         .fixed {
             position: fixed;
             top: 20px;
         }
-        .headline {
-            border-top: 1px solid #c0c0c0;
+        
+        .scroll-bottom {
+            position: absolute;
+            bottom: 190px;
+        }
+        .side {
+            box-sizing: border-box;
+            background-color: rgb(250,250,250);
+            padding-bottom: 1px;
+            -ms-word-break: break-all;
+            word-break: break-all;
+            /* Non standard for webkit */
+            // word-break: break-word;
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
+            >div {
+                padding: 12px 15px;
+
+                // margin-right: -10px;
+                border-bottom: 1px solid #c0c0c0;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            a {
+                color: #4d6dad;
+                transition: 0.5s ease;
+                &:hover {
+                    color: #223253;
+                }
+            }
+        }
+        .content-ul {
+            overflow-y: auto;
+            padding-right: 10px;
+            line-height: 1.8;
+            padding-left: 35px;
+            ul {
+                padding-left: 20px;
+            }
         }
     }
 }
