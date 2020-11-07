@@ -7,7 +7,7 @@
 
 # Site settings
 title: CFN
-brief-intro: Fake news on Cybertron.
+brief-intro: "Cybertron fake news. By fans, for fans."
 baseurl: "/cybertron-fake-news" # the subpath of your site, e.g. /blog
 url: "https://largecats.github.io/" # the base hostname & protocol for your site
 
