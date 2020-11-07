@@ -18,8 +18,15 @@
         padding: 20px 30px;
         line-height: 1.6;
         font-size: 16px;
-        background-color: #f8f8fd;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+        background-color: rgb(250,250,250);
+        // box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            height: 50px;
+            background-color: rgb(225, 225, 225);
+            border-bottom: 1px solid #c0c0c0;
+        }
         >h1 {
             margin-bottom: -10px;
         }
@@ -92,52 +99,35 @@
     .right {
         float: left;
         width: 25%;
-        padding-left: 20px;
-        top: 0;
+        padding: 20px 30px;
+        line-height: 1.6;
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            height: 50px;
+            background-color: rgb(225, 225, 225);
+            border-bottom: 1px solid #c0c0c0;
+        }
         .fixed {
             position: fixed;
             top: 20px;
         }
-        .scroll-bottom {
-            position: absolute;
-            bottom: 190px;
-        }
-        .side {
-            box-sizing: border-box;
-            background-color: #f8f8fd;
-            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
-            padding-bottom: 1px;
-            -ms-word-break: break-all;
-            word-break: break-all;
-            /* Non standard for webkit */
-            // word-break: break-word;
-            -webkit-hyphens: auto;
-            -moz-hyphens: auto;
-            -ms-hyphens: auto;
-            hyphens: auto;
-            >div {
-                padding: 12px 15px;
-
-                // margin-right: -10px;
-                border-bottom: 1px solid #c0c0c0;
-                font-size: 16px;
-                font-weight: bold;
+        ul {
+            >h2 {
+                margin-left: -40px;
+                color: #6a6b6b;
             }
-            a {
-                color: #4d6dad;
-                transition: 0.5s ease;
-                &:hover {
+            li {
+                line-height: 1.8;
+                color: #888888;
+                .title {
+                    font-weight: bold;
                     color: #223253;
+                    transition: 0.3s ease;
+                    &:hover {
+                        color: #4d6dad;
+                    }
                 }
-            }
-        }
-        .content-ul {
-            overflow-y: auto;
-            padding-right: 10px;
-            line-height: 1.8;
-            padding-left: 35px;
-            ul {
-                padding-left: 20px;
             }
         }
     }
