@@ -6,55 +6,48 @@ icon: entertainment
 type: page
 ---
 
-<div class="page clearfix">
-    <div class="left">
-        <h1>{{page.title}}</h1>
-        <hr>
-        <ul>
-            {% for category in site.categories %}
-                {% if category[0] == page.title %}
-                <!-- <h2 id="{{category | first}}">{{category | first}}</h2> -->
-                {% for posts in category  %}
-                    {% for post in posts %}
-                        {% if post.url %}
-                        <li>
-                            <time>
-                            {{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.
-                            </time>
-                            <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-
-                            {% include category.html %}
-                            {% include tag.html %}
-                        </li>
-                        {% endif %}
-                    {% endfor %}
+<div class="page clearfix" index>
+  <div class="left">
+      <h1>{{page.title}}</h1>
+      <ul>
+        {% for category in site.categories %}
+          {% if category[0] == page.title %}
+            {% for posts in category  %}
+                {% for post in posts %}
+                    {% if post.url %}
+                      <li>
+                        <h4>
+                          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h4>
+                        <div class="label">
+                            <div class="label-card">
+                                <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
+                            </div>
+                            <div class="label-card">
+                                {% if post.author %}<i class="fa fa-user"></i>{{ post.author }}
+                                {% endif %}
+                            </div>
+                            <div class="label-card">
+                                {% if page.meta %}<i class="fa fa-key"></i>{{ page.meta }}  {% endif %}
+                            </div>
+                        </div>
+                        <div class="excerpt">
+                            {{post.excerpt}}
+                        </div>
+                        <div class="read-all">
+                            <a href="{{ post.url | prepend: site.baseurl }}"><i class="fa fa-newspaper-o"></i>Read All</a>
+                        </div>
+                      </li>
+                    {% endif %}
                 {% endfor %}
-                {% endif %}
             {% endfor %}
-        </ul>
-    </div>
-    <button class="anchor"><i class="fa fa-anchor"></i></button>
-    <div class="right">
-        <div class="wrap">
-  
-            <!-- Content -->
-            <div class="side content">
-                <div>
-                    Content
-                </div>
-                <ul id="content-side" class="content-ul">
-                    {% for category in site.categories%}
-                        <li>
-                            <a data-scroll href="#{{ category | first }}">
-                                {{ category | first }} ({{ category | last | size }})
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    </div>
+          {% endif %}
+        {% endfor %}
+      </ul>
   </div>
-  <script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
-  
-  
+
+  <button class="anchor"><i class="fa fa-anchor"></i></button>
+
+</div>
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+

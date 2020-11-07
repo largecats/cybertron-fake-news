@@ -4,7 +4,7 @@ header {
     color: #9d9d9d;
     margin-bottom: 20px;
     a {
-        color: rgb(225, 225, 225);
+        color: rgb(200,200,200);
         -webkit-transition: 0.2s ease;
         transition: 0.2s ease;
         &:hover {
@@ -22,6 +22,7 @@ header {
         small {
             margin-left: 26px;
             font-size: 14px;
+            color: rgb(255,255,255);
         }
         .menu{
             display: none;
