@@ -70,12 +70,12 @@ layout: default
     </div>
      
     <!-- script pointing to jekyll-search.js -->
-    <script src="/js/searchBox.js"></script>
+    <script src="{{ "/js/searchBox.js " | prepend: site.baseurl }}" charset="utf-8"></script>
     <script>
         SimpleJekyllSearch({
           searchInput: document.getElementById('search-input'),
           resultsContainer: document.getElementById('results-container'),
-          json: '/search.json'
+          json: "{{ "/search.json" | prepend: site.baseurl }}"
         })
     </script>
   </div>
