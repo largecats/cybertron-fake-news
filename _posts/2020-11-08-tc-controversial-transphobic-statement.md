@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TC's Shocking Transphobic Statement Stirs Controversy Across Cybertron and Earth"
-date:   2020-11-05
+date:   2020-11-08
 categories: Entertainment Cybertron Galaxy
 tags: featured earth
 author: TBD

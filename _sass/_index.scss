@@ -1,7 +1,6 @@
 .page[index] {
     a {
-        color: rgb(0,0,0);
-        transition: 0.5s ease;
+        color: rgb(5,5,5);
         &:hover {
             color: rgb(200,0,0);
         }
@@ -64,7 +63,6 @@
                     font-size: 14px;
                     a {
                         color: rgb(5,5,5);
-                        transition: 0.2s ease;
                         &:hover {
                             color: rgb(200,0,0);
                         }
