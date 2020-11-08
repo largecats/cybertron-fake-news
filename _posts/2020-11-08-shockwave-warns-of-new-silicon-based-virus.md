@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Shockwave Warns of Silicon-based Virus"
+title:  "Shockwave Warns of New Silicon-based Virus"
 date:   2020-11-08
 categories: Cybertron Technology
 tags: featured
