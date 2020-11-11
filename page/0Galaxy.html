@@ -21,9 +21,9 @@ type: page
           {% for post in site.posts %}
             {% if post.categories contains page.title and post.tags contains "earth" %}
               <li>
-                <h4>
+                <h3>
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                </h4>
+                </h3>
                 <div class="label">
                     <div class="label-card">
                         <i class="fa fa-calendar"></i>{{ post.date | date: "%F" }}
